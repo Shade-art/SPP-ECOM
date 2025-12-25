@@ -67,7 +67,8 @@ window.login = async function () {
   try {
     await signInWithEmailAndPassword(auth, email, pass);
     alert("Login successful!");
-    console.log("Logged in user:", email);
+    // Redirecting
+     window.location.href = "success.html";
   } catch (err) {
     alert(err.message);
   }
